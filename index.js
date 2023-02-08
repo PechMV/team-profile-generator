@@ -31,11 +31,11 @@ function runApp () {
             },
             {
                 type: 'input',
-                name: 'managerPhone',
-                message: "What is the manager's office phone number?"
+                name: 'managerOfficeNumber',
+                message: "What is the manager's office number?"
             }
         ]).then(answers => {
-            const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerPhone);
+            const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerOfficeNumber);
             teamArray.push(manager);
             createTeam();
         });
